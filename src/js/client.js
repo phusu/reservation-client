@@ -17,8 +17,8 @@ $(document).ready(function () {
     if (cognitoUser == null) {
         // Check if credentials exist
         var poolData = {
-            UserPoolId: <<YOUR_USER_POOL_ID>>,
-            ClientId: <<YOUR_CLIENT_ID>>'
+            UserPoolId: <<YOUR_USER_POOL_ID>>, // Your user pool id here
+            ClientId: <<YOUR_CLIENT_ID>> // Your client id here
         };
         var userPool = new AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool(poolData);
         cognitoUser = userPool.getCurrentUser();
